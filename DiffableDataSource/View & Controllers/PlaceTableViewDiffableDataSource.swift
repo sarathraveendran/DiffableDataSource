@@ -11,6 +11,7 @@ import UIKit
 
 class PlaceTableViewDiffableDataSource: UITableViewDiffableDataSource<Location, Place> {
     
+    // Set Title
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
        
         return snapshot().sectionIdentifiers[section].rawValue

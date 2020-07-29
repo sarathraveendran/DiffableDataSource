@@ -17,6 +17,7 @@ class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var placeImageView: UIImageView!
     
     
+    // Set cell data
     var data: Place? {
         
         didSet {
