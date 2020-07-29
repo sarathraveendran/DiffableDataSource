@@ -13,6 +13,13 @@
 		4D91E43C24D1F4A90069356E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D91E43A24D1F4A90069356E /* Main.storyboard */; };
 		4D91E43E24D1F4AA0069356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D91E43D24D1F4AA0069356E /* Assets.xcassets */; };
 		4D91E44124D1F4AA0069356E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D91E43F24D1F4AA0069356E /* LaunchScreen.storyboard */; };
+		4D91E44B24D1F7940069356E /* PlaceTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91E44A24D1F7940069356E /* PlaceTableViewDiffableDataSource.swift */; };
+		4D91E44E24D1F7E20069356E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91E44D24D1F7E20069356E /* Location.swift */; };
+		4D91E45024D1F8470069356E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91E44F24D1F8470069356E /* Place.swift */; };
+		4D91E45324D1F8C00069356E /* London.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D91E45224D1F8C00069356E /* London.json */; };
+		4D91E45524D1F9F70069356E /* Paris.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D91E45424D1F9F70069356E /* Paris.json */; };
+		4D91E45924D1FB1B0069356E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91E45824D1FB1B0069356E /* Bundle.swift */; };
+		4D91E45B24D1FC1D0069356E /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91E45A24D1FC1D0069356E /* PlaceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4D91E43D24D1F4AA0069356E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D91E44024D1F4AA0069356E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D91E44224D1F4AA0069356E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D91E44A24D1F7940069356E /* PlaceTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
+		4D91E44D24D1F7E20069356E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4D91E44F24D1F8470069356E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4D91E45224D1F8C00069356E /* London.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = London.json; sourceTree = "<group>"; };
+		4D91E45424D1F9F70069356E /* Paris.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Paris.json; sourceTree = "<group>"; };
+		4D91E45824D1FB1B0069356E /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		4D91E45A24D1FC1D0069356E /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		4D91E43324D1F4A90069356E /* DiffableDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				4D91E43424D1F4A90069356E /* AppDelegate.swift */,
-				4D91E43624D1F4A90069356E /* SceneDelegate.swift */,
-				4D91E43824D1F4A90069356E /* ViewController.swift */,
-				4D91E43A24D1F4A90069356E /* Main.storyboard */,
-				4D91E43D24D1F4AA0069356E /* Assets.xcassets */,
-				4D91E43F24D1F4AA0069356E /* LaunchScreen.storyboard */,
-				4D91E44224D1F4AA0069356E /* Info.plist */,
+				4D91E45624D1FB040069356E /* Helpers */,
+				4D91E44C24D1F7CD0069356E /* Modals */,
+				4D91E44924D1F6960069356E /* View & Controllers */,
+				4D91E44824D1F6840069356E /* Resources */,
 			);
 			path = DiffableDataSource;
+			sourceTree = "<group>";
+		};
+		4D91E44824D1F6840069356E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D91E43424D1F4A90069356E /* AppDelegate.swift */,
+				4D91E43624D1F4A90069356E /* SceneDelegate.swift */,
+				4D91E43F24D1F4AA0069356E /* LaunchScreen.storyboard */,
+				4D91E43A24D1F4A90069356E /* Main.storyboard */,
+				4D91E43D24D1F4AA0069356E /* Assets.xcassets */,
+				4D91E44224D1F4AA0069356E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D91E44924D1F6960069356E /* View & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D91E43824D1F4A90069356E /* ViewController.swift */,
+				4D91E44A24D1F7940069356E /* PlaceTableViewDiffableDataSource.swift */,
+				4D91E45A24D1FC1D0069356E /* PlaceTableViewCell.swift */,
+			);
+			path = "View & Controllers";
+			sourceTree = "<group>";
+		};
+		4D91E44C24D1F7CD0069356E /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				4D91E44D24D1F7E20069356E /* Location.swift */,
+				4D91E44F24D1F8470069356E /* Place.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		4D91E45124D1F8990069356E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D91E45224D1F8C00069356E /* London.json */,
+				4D91E45424D1F9F70069356E /* Paris.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4D91E45624D1FB040069356E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D91E45124D1F8990069356E /* Data */,
+				4D91E45724D1FB0A0069356E /* Extension */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4D91E45724D1FB0A0069356E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D91E45824D1FB1B0069356E /* Bundle.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +197,8 @@
 				4D91E44124D1F4AA0069356E /* LaunchScreen.storyboard in Resources */,
 				4D91E43E24D1F4AA0069356E /* Assets.xcassets in Resources */,
 				4D91E43C24D1F4A90069356E /* Main.storyboard in Resources */,
+				4D91E45524D1F9F70069356E /* Paris.json in Resources */,
+				4D91E45324D1F8C00069356E /* London.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D91E43924D1F4A90069356E /* ViewController.swift in Sources */,
+				4D91E45924D1FB1B0069356E /* Bundle.swift in Sources */,
+				4D91E44B24D1F7940069356E /* PlaceTableViewDiffableDataSource.swift in Sources */,
+				4D91E45B24D1FC1D0069356E /* PlaceTableViewCell.swift in Sources */,
+				4D91E44E24D1F7E20069356E /* Location.swift in Sources */,
+				4D91E45024D1F8470069356E /* Place.swift in Sources */,
 				4D91E43524D1F4A90069356E /* AppDelegate.swift in Sources */,
 				4D91E43724D1F4A90069356E /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DiffableDataSource/Info.plist;
+				INFOPLIST_FILE = DiffableDataSource/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DiffableDataSource/Info.plist;
+				INFOPLIST_FILE = DiffableDataSource/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

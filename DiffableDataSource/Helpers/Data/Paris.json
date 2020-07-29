@@ -1,0 +1,14 @@
+[
+  {
+    "id": "Paris_city",
+    "name": "City of Paris",
+    "description": "Paris (French pronunciation: ​[paʁi] (About this soundlisten)) is the capital and most populous city of France, with an estimated population of 2,150,271 residents as of 2020, in an area of 105 square kilometres (41 square miles).",
+    "imageName": "city_of_paris"
+  },
+  {
+    "id": "old_paris",
+    "name": "Middle Ages to Louis XIV",
+    "description": "By the end of the 12th century, Paris had become the political, economic, religious, and cultural capital of France.[32] The Palais de la Cité, the royal residence, was located at the western end of the Île de la Cité. In 1163, during the reign of Louis VII, Maurice de Sully, bishop of Paris, undertook the construction of the Notre Dame Cathedral at its eastern extremity.",
+    "imageName": "old_paris"
+  }
+]

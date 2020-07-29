@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EE-Wt-tni">
+                                <rect key="frame" x="41" y="405" width="332" height="86"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="lpf-Ql-Y7W">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="247" id="Hf2-Kr-VDJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPY-XV-bQu">
+                                        <rect key="frame" x="255" y="0.0" width="77" height="86"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="OPY-XV-bQu" firstAttribute="leading" secondItem="lpf-Ql-Y7W" secondAttribute="trailing" constant="8" id="8cO-cN-Paq"/>
+                                    <constraint firstAttribute="bottom" secondItem="OPY-XV-bQu" secondAttribute="bottom" id="CWz-Ml-Zxx"/>
+                                    <constraint firstItem="OPY-XV-bQu" firstAttribute="top" secondItem="4EE-Wt-tni" secondAttribute="top" id="Jq8-CZ-amn"/>
+                                    <constraint firstItem="lpf-Ql-Y7W" firstAttribute="leading" secondItem="4EE-Wt-tni" secondAttribute="leading" id="KN2-SX-sQA"/>
+                                    <constraint firstAttribute="trailing" secondItem="OPY-XV-bQu" secondAttribute="trailing" id="UO1-vG-8MJ"/>
+                                    <constraint firstAttribute="height" constant="86" id="Uag-PC-vzi"/>
+                                    <constraint firstAttribute="width" constant="332" id="aqo-yJ-Fie"/>
+                                    <constraint firstAttribute="bottom" secondItem="lpf-Ql-Y7W" secondAttribute="bottom" id="ftX-8w-C03"/>
+                                    <constraint firstItem="lpf-Ql-Y7W" firstAttribute="top" secondItem="4EE-Wt-tni" secondAttribute="top" id="qez-It-IY0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4EE-Wt-tni" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T5w-Tr-u3q"/>
+                            <constraint firstItem="4EE-Wt-tni" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="le1-DZ-Ll1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="me" width="412" height="154"/>
+    </resources>
+</document>

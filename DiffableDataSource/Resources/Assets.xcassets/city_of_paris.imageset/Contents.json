@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "city_of_paris.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

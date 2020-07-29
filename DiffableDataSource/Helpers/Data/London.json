@@ -1,0 +1,14 @@
+[
+  {
+    "id": "landon_city",
+    "name": "City of London",
+    "description": "The City of London is a city, ceremonial county and local government district[note 1] that contains the historic centre and the primary central business district (CBD) of London.",
+    "imageName": "city_of_landon"
+  },
+  {
+    "id": "landon_temple",
+    "name": "The Temple",
+    "description": "Inner Temple and Middle Temple (which neighbour each other) are two of the few remaining liberties, an old name for a geographic division. They are independent extra-parochial areas,[33] historically not governed by the City of London Corporation[34] (and are today regarded as local authorities for most purposes[35]) and equally outside the ecclesiastical jurisdiction of the Bishop of London. They are within the boundaries and liberties of the City, but can be thought of as independent enclaves. They are both part of Farringdon Without.",
+    "imageName": "the_temple"
+  }
+]
